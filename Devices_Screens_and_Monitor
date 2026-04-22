@@ -5,26 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin: 0;
+            font-size: 50px;
         }
-        .row {
+        /* Displays */
+        .box {
             display: flex;
-            gap: 20px;
-            margin: 20px 0;
+            justify-content: center;
+            align-items: center;
+            height: 350PX;
+            border: 2px solid black;
+            background-color: azure;
+                    
         }
 
-        .box {
-            flex: 1;
-            height: 120px;
-            border: 2px solid black;
+.blurred-bg{ filter: blur(2px);}
+
+        #box_1 {
+            background-image: url(workplace1.jpg);
+            background-position: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:aliceblue;
+        }
+        
+        #box_2 {
+            background-image: url(desktop.jpg);
+            background-position: 0px -40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:aliceblue;
+        }
+        #box_3 {
+            
+            background-image: url(workplace.jpg);
+            background-position: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 <body>
     <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box">Device's Screens & Monitor</div>
+            <div class="box" id="box_1">Mobile Phone</div>
+            <div class="box" id="box_2">Desktop</div>
+            <div class="box" id="box_3">Console</div>
         </div>
 </body>
 </html>
